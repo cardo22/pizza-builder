@@ -1,5 +1,5 @@
 use Rack::Static, 
-:urls => ["/pizza.css", "/index.html", "/pizza.js"]
+:urls => ["/pizza.css", "/index.html", "/pizza.js", "/jquery-2.1.4.js"]
 
 run lambda { |env| 
 	[
@@ -10,5 +10,5 @@ run lambda { |env|
 		},
 		File.open('index.html', File::RDONLY)
 	]
-	
+
 }
